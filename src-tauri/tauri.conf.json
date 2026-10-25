@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ProHub",
+  "version": "1.0.0",
+  "identifier": "com.fana.prohub",
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDYyODdFQzM4M0NBNjQ5RUQKUldUdFNhWThPT3lIWWd3WlIra0s1VXArNlRGa0xlK29QZ1pOcVhZRnZjbFhHYWg4aGV3TVFVNXQK",
+      "endpoints": [
+        "https://github.com/karkarofff/prohub/releases/latest/download/latest.json"
+      ]
+    }
+  },
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "ProHub",
+        "width": 1120,
+        "height": 740,
+        "minWidth": 880,
+        "minHeight": 560,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "languages": ["French"],
+        "installMode": "currentUser"
+      }
+    }
+  }
+}

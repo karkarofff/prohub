@@ -2,8 +2,7 @@
 
 **Le hub qui centralise tout ce que vous lancez sur Windows** : sites, applications, scripts, fichiers, veilles et routines, dans une seule interface soignée.
 
-<!-- Capture d'écran : remplacez par la vôtre -->
-<!-- ![ProHub](docs/screenshot.png) -->
+![ProHub](screenshot.png)
 
 ## Fonctionnalités
 
